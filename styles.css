@@ -30,16 +30,17 @@ body {
   background-color: var(--color-white);
   display: flex;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .container {
   max-width: 1000px;
-  width: 90%;
+  /* width: 90%; */
   /* height: 90vh; */
   min-height: 90vh;
+  margin: 2rem;
   border-radius: 8px;
   display: flex;
   overflow: hidden;
@@ -81,6 +82,7 @@ body {
   font-size: 1.5rem;
   padding: 1.5rem;
   width: 75%;
+  margin-top: 5rem;
   align-self: flex-start;
   background-color: var(--color-grey);
   border-radius: 100px;
@@ -150,12 +152,12 @@ body {
 }
 
 @media only screen and (max-width: 50em) {
-  html {
+  /* html {
     font-size: 55%;
-  }
+  } */
 
   .column {
-    padding: 1.5rem 3rem;
+    padding: 3rem;
   }
   .column__text {
     line-height: 1.5;
